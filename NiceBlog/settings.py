@@ -55,7 +55,7 @@ ROOT_URLCONF = 'NiceBlog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'frontend')],
+        'DIRS': [os.path.join(BASE_DIR,'template')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -81,15 +81,15 @@ DATABASES = {
     # }
 'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': '阿里云公网IP',# mysql 开放的地址，如果是本机则保留127.0.0.1
+        'HOST': '47.112.111.253',# mysql 开放的地址，如果是本机则保留127.0.0.1
         'PORT': '3306',
         'NAME': 'mysql',
         'USER': 'root',
-        'PASSWORD': 'mysql密码',
-        # 'OPTIONS': {
-        #     # 'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        #     # 'sql_mode': 'traditional',
-        #     },
+        'PASSWORD': 'szu1983',
+        'OPTIONS': {
+            # 'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+            # 'sql_mode': 'traditional',
+            },
     }
 }
 
@@ -136,9 +136,10 @@ USE_TZ = True
 #     os.path.join(BASE_DIR,"frontend"),
 # ]
 STATIC_URL = '/static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # 静态文件主目录
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "frontend/static"),# 路由到static文件夹位置
-]
+#STATICFILES_DIRS = [
+#    os.path.join(BASE_DIR, "frontend/static"),# 路由到static文件夹位置
+#]
+
 
