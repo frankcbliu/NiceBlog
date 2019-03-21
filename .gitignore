@@ -103,6 +103,8 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-# my pycharm project index
+# my pycharm project index （pycharm自动生成文件）
 /.idea
 
+# setting（setting配置文件）
+.NiceBlog/settings.py
