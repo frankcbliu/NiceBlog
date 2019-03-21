@@ -81,11 +81,11 @@ DATABASES = {
     # }
 'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': '47.112.111.253',# mysql 开放的地址，如果是本机则保留127.0.0.1
+        'HOST': '127.0.0.1',# mysql 开放的地址，如果是本机则保留127.0.0.1
         'PORT': '3306',
         'NAME': 'mysql',
         'USER': 'root',
-        'PASSWORD': 'szu1983',
+        'PASSWORD': 'mysql password', # mysql 的密码
         'OPTIONS': {
             # 'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
             # 'sql_mode': 'traditional',
