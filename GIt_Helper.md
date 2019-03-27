@@ -24,3 +24,7 @@ git commit -m "the message you want to say"
 git push origin master
 ```
 > push it to github, and then others can see it on the github.
+
+
+---
+### In order to push change quickly, you can put these command in a '.sh' file, such as 'push.sh' under this folder.
