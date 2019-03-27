@@ -137,6 +137,9 @@ USE_TZ = True
 # ]
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+#MODULE_URL = '/module/'
+#MODULE_ROOT = os.path.join(BASE_DIR, 'module')
+
 # 静态文件主目录
 #STATICFILES_DIRS = [
 #    os.path.join(BASE_DIR, "frontend/static"),# 路由到static文件夹位置
