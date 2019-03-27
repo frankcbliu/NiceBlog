@@ -85,7 +85,7 @@ DATABASES = {
         'PORT': '3306',
         'NAME': 'mysql',
         'USER': 'root',
-        'PASSWORD': 'szu1983', # mysql 的密码
+        'PASSWORD': 'your mysql keyword', # mysql 的密码
         'OPTIONS': {
             # 'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
             # 'sql_mode': 'traditional',
@@ -137,8 +137,6 @@ USE_TZ = True
 # ]
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-#MODULE_URL = '/module/'
-#MODULE_ROOT = os.path.join(BASE_DIR, 'module')
 
 # 静态文件主目录
 #STATICFILES_DIRS = [
