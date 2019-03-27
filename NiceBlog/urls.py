@@ -30,6 +30,5 @@ urlpatterns = [
     path('module/detail.html', views.moduleIndex, name='moduleDetail'),
     url(r'^admin/', admin.site.urls),
 # views 接口
-    
 ]# + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 
