@@ -85,7 +85,7 @@ DATABASES = {
         'PORT': '3306',
         'NAME': 'mysql',
         'USER': 'root',
-        'PASSWORD': 'mysql password', # mysql 的密码
+        'PASSWORD': 'szu1983', # mysql 的密码
         'OPTIONS': {
             # 'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
             # 'sql_mode': 'traditional',
