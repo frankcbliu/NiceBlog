@@ -25,9 +25,9 @@ from django.conf import settings
 urlpatterns = [
 #    path('admin/', admin.site.urls),
 # module 路由
-    path('',views.index),
-    path('module/index.html', views.moduleIndex, name='moduleIndex'),
-    path('module/detail.html', views.moduleIndex, name='moduleDetail'),
+    path('',module.index),
+    path('module/index.html', module.moduleIndex, name='moduleIndex'),
+    path('module/detail.html', module.moduleDetail, name='moduleDetail'),
     url(r'^admin/', admin.site.urls),
 # views 接口
 ]# + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
