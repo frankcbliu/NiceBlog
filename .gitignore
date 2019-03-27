@@ -107,5 +107,5 @@ venv.bak/
 /.idea
 
 # setting（setting配置文件）
-.NiceBlog/settings.py
+#.NiceBlog/settings.py
 
