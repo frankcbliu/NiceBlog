@@ -25,5 +25,6 @@ urlpatterns = [
 #    path('admin/', admin.site.urls),
     path('',views.index),
     url(r'^admin/', admin.site.urls),
+    path('module/index.html', views.moduleIndex, name='moduleIndex'),
 ]# + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 
