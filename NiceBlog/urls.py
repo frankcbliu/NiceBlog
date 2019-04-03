@@ -31,5 +31,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 # views 接口
     path('blog/',views.getBlog),
+    path('allblog/',views.getAllBlog)
 ]# + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 
