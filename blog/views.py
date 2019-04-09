@@ -14,6 +14,8 @@ def getAllBlog(request):
             if blog[i]['imgurl'] == None:
                 blog[i]['imgurl'] = "http://"+ROOT_URL+"/static/default.jpg"
             # if blog[i]['author'] == None or blog[i]['title'] == None or blog[i]['title'] == None
+            if blog[i]['time']!=None:# 对时间进行处理
+                blog[i]['time'] = blog[i]['time'].strftime("%Y-%m-%d %H:%M:%S")
             data[i] = str(blog[i])
 
         return HttpResponse(json.dumps(data), content_type="application/json")
